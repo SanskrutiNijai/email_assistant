@@ -1,0 +1,28 @@
+{
+  "name": "Email Writer Assistant",
+  "description": "AI-powered Gmail assistant for replies and summaries",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "https://mail.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Email Writer Assistant"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icons/*"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}
