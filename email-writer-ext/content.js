@@ -88,7 +88,7 @@ function dispatchInputEvents(target) {
 // CALL BACKEND
 // -----------------------------
 async function callBackend(endpoint, payload) {
-  const url = `http://localhost:8080${endpoint}`; // endpoints passed like '/api/email/generate'
+  const url = `https://emailaiassistant.onrender.com${endpoint}`; // endpoints passed like '/api/email/generate'
 
   try {
     const resp = await fetch(url, {
