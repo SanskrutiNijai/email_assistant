@@ -8,12 +8,6 @@ This project is a powerful, full-stack application designed to boost productivit
 | Client Extension | JavaScript (Content Script)  | Injects custom UI buttons into Gmail's compose/reply windows, captures email content, and sends requests to the Backend API. |
 | Demo Web App     | ReactJS, Tailwind CSS        | A standalone application used for testing and showcasing the API's functionality independently of the extension.             |
 
-
-# Random Ideas Project
-This is a fullstack application for sharing random ideas. It was built as part of my learning journey with backend development and MongoDB.
-
-The app includes a Node.js/Express REST API that uses MongoDB for persistent storage. The frontend can be integrated separately and communicates with the API through standard HTTP methods.
-
 ### 🔗 Deployed Link
 👉 [https://emailassistant-aj9t.onrender.com/](https://emailassistant-aj9t.onrender.com/)
 
